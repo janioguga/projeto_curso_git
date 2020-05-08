@@ -30,7 +30,8 @@ print(conjunto_animais)
 lista_animais = list(conjunto_animais)
 print(lista_animais)
 #se tem uma lista que tem duplicidade, transforma em conjunto e depois transforma em lista novamente.
-    
+# lembrar que {} representa conjunto, [] representa lista, () representa lista
+
 
 
 # no conjunto a característica é a {}
