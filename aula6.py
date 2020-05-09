@@ -46,7 +46,11 @@ print(lista_animais)
 #
 # print(conjunto)
 # conjunto de elementos que só pode ter elementos único
-te = {10, 20, 30, 40}
-conjunto.discard(te)
+te = {10, 20, 30, 100, 290, 56}
+te.discard(100)
+print('Número do discarte no conjunto {} ' .format(te))
+
+
 print(te)
-# funçao .discard()
+# funçao .discard() deve indicar o numero a ser excluido indicando ele no conjunto
+
