@@ -12,10 +12,14 @@ print('Diferença 2: {} '.format(conjunto_diferenca2))
 # diferença simétrica: tudo que não tem nos dois. aquilo que só tem no a e so tem no b
 conjunto_diff_simetrica = conjunto.symmetric_difference(conjunto2)
 print('Diferença Simétrica de 1 para 2:  {} '. format(conjunto_diff_simetrica))
+#   conjunto_a.difference(conjunto_b)
 
 #verificando subset de conjuntos (subconjuntos)
 conjunto_a = {1, 2, 3, 4}
 conjunto_b = {1, 2, 3, 4, 5, 6}
+conjunto_c = conjunto_a .difference(conjunto_b)
+print(conjunto_c)
+
 conjunto_subset = conjunto_a.issubset(conjunto_b)
 print('Conjunto Sub-set: {} '.format(conjunto_subset))
 # lembrar que as funçoes chama-se sempre como '.algumacoisa'
@@ -42,3 +46,7 @@ print(lista_animais)
 #
 # print(conjunto)
 # conjunto de elementos que só pode ter elementos único
+te = {10, 20, 30, 40}
+conjunto.discard(te)
+print(te)
+# funçao .discard()
