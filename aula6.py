@@ -49,7 +49,6 @@ print(lista_animais)
 te = {10, 20, 30, 100, 290, 56}
 print('Número dos conjuntos originais: {} '.format(te))
 te.discard(100)
-print('Número do discarte no conjunto: {} ' .format(te))
-
+print('Número do discarte no conjunto: {} ' .format(te))    
 # funçao .discard() deve indicar o numero a ser excluido indicando ele no conjunto
 
