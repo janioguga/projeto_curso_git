@@ -26,7 +26,9 @@ class Mixer:
 
 mixer = Mixer()
 mixer.power
+mixer.power
 mixer.velocidade_1()
+print(mixer.power)
 print('Velocidade do Mixer: {} '.format(mixer.velocidade))
 
 
