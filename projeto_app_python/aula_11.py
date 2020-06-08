@@ -1,4 +1,4 @@
-
+# colocando excessoes a partir do tipo de erro
 try:
     divisao = 10 / 0
 except ArithmeticError:
