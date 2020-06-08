@@ -4,6 +4,9 @@ class Error (Exception):
 class Inputerror(Error):
     def __init__(self, message):
         self.message = message
+class NameError (Error):
+    def __init__(self, message):
+        self.message = message
 while True:
     try:
         x = int(input('Entre com uma nota de 0 a 10: '))
@@ -11,7 +14,9 @@ while True:
         if x > 10:
             raise Inputerror('Nota deve ser menor que 10')
         elif x < 0:
-            raise Inputerror ("Nota deve ser maior que 0")
+            raise Inputerror("Nota deve ser maior que 0")
+        elif x == 0:
+            raise NameError('nota deve ser maior que 0')
         break
     except ValueError:
         print('Valor inválido, deve-se colocar apenas números!')
@@ -23,5 +28,13 @@ nova_banda = 'Caetano Veloso'
 if nova_banda not in bandas_metal:
   raise InputError('{} não é metal!'.format(nova_banda))
 
-
+w = 0
+while w > 10:
+    print(x)
+    w+=1
+    if w == 10:
+        print('voce chegou ao fim !')
+        break
+    else:
+        print('fim do while')
 
