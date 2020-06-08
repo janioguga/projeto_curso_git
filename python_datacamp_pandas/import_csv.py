@@ -1,8 +1,25 @@
 import pandas as pd
 
 oms = pd.read_csv('/Users/jgustavo/Desktop/Observatorio ciência/observacoes_correcao_site/atualizacoes/COVID19-web.csv')
-# print(oms)
-print(oms.loc[[1, 10, 100, 1000]])
+oms.info()
+print(oms.columns)
+print(oms.shape)
+print(oms.describe)
+print(oms.index)
+
+# for lab, row in oms.iterrows():
+#     oms.loc[lab, 'nova coluna'] = str(row['Source Register'])
+#     print(oms.columns[['nova coluna']])
+
+#print (oms)
+# for val in oms:
+#      print(oms)
+#  for lab, row in oms.iterrows():
+#      print(lab + ': ' + row['Source Register])
+        
+    # print(row)
+
+#print(oms.loc[[1, 10, 100, 1000]])
 import numpy as np
 
 oms_teste = (oms.loc[[2, 10, 100, 100, 2100, 19], ['Last Refreshed on', 'Countries', 'Public title']])
@@ -91,7 +108,7 @@ world = { "afghanistan":30.55,
           "algeria":39.21 }
 
 for key, value in world.items() :
-    print(key + " -- " + str(value))
+    print('País: ' + key + " -- " + str(value) + ' GDP')
 
 
 
